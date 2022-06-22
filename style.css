@@ -1,0 +1,320 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 2rem 9%;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;
+    right: 0;
+    background: rgb(19, 85, 81);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    height: 9rem;
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+header .logo span{
+    color: orange;
+}
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0.8rem;
+    
+}
+header .navbar a:hover{
+    color: orange;
+}
+
+header .search-bar-container{
+    position: left;
+    top: 100%;left: 0;right: 3;
+    padding: 1.5rem 2rem;
+    background: rgb(19, 85, 81);
+    /* border-top: 0.1rem solid rgb(30, 185, 120); */
+    display: flex;
+    align-items: center;
+}
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+}
+header .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+header .search-bar-container label:hover{
+    color: orange;
+}
+ .home{
+    min-height: 100vh;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+} 
+.home .content{
+    text-align: center;
+}
+.home .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0.3rem 0.5rem rgb(46, 46, 46);
+}
+.home .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0.3rem 0.5rem rgb(46, 46, 46);
+}
+.home .content p{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 3.5rem 0;
+    text-shadow: #333;
+}
+.content .btn{
+    color: #333;
+    background-color: orange;
+    border: 0.1rem solid orange;
+    font-size: 2.5rem;
+    /* border-radius: 0.5rem; */
+    padding: 0.3rem;
+}
+.content .btn:hover{
+    color: orange;
+    background: transparent;
+}
+.home .video-container video{
+    position: absolute;
+    top: 0;left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.home .control{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgb(42, 42, 42);
+    position: relative;
+    top: 10rem;
+}
+.home .control .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0.5rem;
+} 
+#home{
+    justify-content: last baseline;
+}
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.heading span{
+    font-size: 3.5rem;
+    background: rgb(157, 154, 154);
+    color: orange;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+}
+.heading span .space{
+    background: none;
+}
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.book .row .image{
+    flex: 1 1 40rem;
+
+}
+.book .row .image img{
+    width: 100%;
+
+  
+}
+.book .row form{
+    flex:1 1 40rem;
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: large;
+}
+.book .row form .inputbox{
+    padding: 0.5rem 0;
+}
+.book .row form .inputbox input{
+    width: 100%;
+    padding: 1.5rem;
+    border: 0.3rem solid rgba(0, 0, 0, 0.1);
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+}
+.book .row form .btn{
+    color: #fff;
+    background-color: orange;
+    border: 0.1rem solid orange;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+.book .row form .btn:hover{
+    color: orange;
+    background: white;
+}
+.book .row form .inputbox h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666;
+}
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.packages .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1 2rem rgba(0, 0, 0, 0.1);
+}
+.packages .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+.packages .box-container .box .content{
+    padding: 2rem;
+}
+.packages .box-container .box .content h3{
+    font-size: 2rem;
+    color: #333;
+}
+.packages .box-container .box .content h3 i{
+    color: orange;
+}
+.packages .box-container .box .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem;
+}
+.packages .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: orange;
+}
+.packages .box-container .box .content .price{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+.packages .box-container .box .content .price span{
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem
+}
+.services .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.services .box-container .box i{
+    padding: 1rem;
+    font-size: 5rem;
+    color: orange;
+}
+.services .box-container .box h3{
+    font-size:2.5rem;
+    color: #333
+}
+.services .box-container .box p{
+    font-size:1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.services .box-container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.review .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    display: flex;
+}
+.review .review-slider{
+    padding: 2rem;
+}
+.review .box img{
+    height: 13rem;
+    width: 13rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.review .box h3{
+    color: #333;
+    font-size: 2.5rem;
+}
+.review .box p{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.review .box .stars{
+    color: orange;
+    font-size: 2.5rem;
+}
+.about_us .box .text{
+    align-items: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.about_us .box .text h2 i{
+    color: red;
+}
